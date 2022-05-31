@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+<bean id="emp1" class="com.springCore.SpringCore.collections.Emp">
+<property name="name" value="john Tom"/>
+<property name="phone">
+<list>
+<value>9044566834</value>
+<value>9044566823</value>
+</list>
+</property>
+
+<property name="address">
+<set>
+<value>Hyderabad</value>
+<value>Bangalore</value>
+<value>Varanasi</value>
+</set>
+</property>
+<property name="cources">
+<map>
+<entry key="java" value="2month"></entry>
+<entry key="python" value="3month"></entry>
+<entry key="c++" value="1month"></entry>
+</map>
+</property>
+</bean>
+	<!-- more bean definitions go here -->
+</beans>
